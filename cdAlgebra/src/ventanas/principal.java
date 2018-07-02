@@ -53,6 +53,7 @@ public class principal extends javax.swing.JFrame {
         btnCapitulo4 = new javax.swing.JButton();
         btnTest = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        btnSalir = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem7 = new javax.swing.JMenuItem();
@@ -72,19 +73,38 @@ public class principal extends javax.swing.JFrame {
         setResizable(false);
 
         btnCapitulo3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cap3.png"))); // NOI18N
+        btnCapitulo3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         btnCapitulo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cap2.png"))); // NOI18N
+        btnCapitulo2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         btnGaleria.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/GALERIA.png"))); // NOI18N
+        btnGaleria.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         btnCapitulo4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cap4.png"))); // NOI18N
+        btnCapitulo4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnCapitulo4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCapitulo4ActionPerformed(evt);
+            }
+        });
 
         btnTest.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/test.png"))); // NOI18N
+        btnTest.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cap1.png"))); // NOI18N
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
+            }
+        });
+
+        btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/quick_remote_lg (2).png"))); // NOI18N
+        btnSalir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalirActionPerformed(evt);
             }
         });
 
@@ -94,51 +114,51 @@ public class principal extends javax.swing.JFrame {
         escritorio.setLayer(btnCapitulo4, javax.swing.JLayeredPane.DEFAULT_LAYER);
         escritorio.setLayer(btnTest, javax.swing.JLayeredPane.DEFAULT_LAYER);
         escritorio.setLayer(jButton1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(btnSalir, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout escritorioLayout = new javax.swing.GroupLayout(escritorio);
         escritorio.setLayout(escritorioLayout);
         escritorioLayout.setHorizontalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(escritorioLayout.createSequentialGroup()
-                .addGap(250, 250, 250)
+                .addGap(180, 180, 180)
                 .addComponent(jButton1)
                 .addGap(107, 107, 107)
                 .addComponent(btnCapitulo4))
             .addGroup(escritorioLayout.createSequentialGroup()
-                .addGap(250, 250, 250)
+                .addGap(180, 180, 180)
                 .addComponent(btnCapitulo2)
                 .addGap(107, 107, 107)
                 .addComponent(btnGaleria))
             .addGroup(escritorioLayout.createSequentialGroup()
-                .addGap(260, 260, 260)
+                .addGap(180, 180, 180)
                 .addComponent(btnCapitulo3)
-                .addGap(97, 97, 97)
+                .addGap(107, 107, 107)
                 .addComponent(btnTest))
+            .addGroup(escritorioLayout.createSequentialGroup()
+                .addGap(1110, 1110, 1110)
+                .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         escritorioLayout.setVerticalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(escritorioLayout.createSequentialGroup()
-                .addGap(100, 100, 100)
+                .addGap(70, 70, 70)
                 .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1)
-                    .addGroup(escritorioLayout.createSequentialGroup()
-                        .addGap(5, 5, 5)
-                        .addComponent(btnCapitulo4)))
-                .addGap(34, 34, 34)
+                    .addComponent(btnCapitulo4)
+                    .addComponent(jButton1))
+                .addGap(53, 53, 53)
                 .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(escritorioLayout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(btnCapitulo2))
+                    .addComponent(btnCapitulo2)
                     .addComponent(btnGaleria))
-                .addGap(26, 26, 26)
+                .addGap(43, 43, 43)
                 .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(escritorioLayout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addComponent(btnCapitulo3))
-                    .addComponent(btnTest)))
+                    .addComponent(btnCapitulo3)
+                    .addComponent(btnTest))
+                .addGap(23, 23, 23)
+                .addComponent(btnSalir))
         );
 
-        jMenu1.setText("Archivo             ");
+        jMenu1.setText("Archivo        ");
         jMenu1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jMenuItem7.setText("Login                ");
@@ -154,7 +174,7 @@ public class principal extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("Capitulos           ");
+        jMenu2.setText("Capitulos      ");
         jMenu2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jMenuItem6.setText("Capitulo I          ");
@@ -221,6 +241,14 @@ this.setVisible(false);
 capitulo1();
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void btnCapitulo4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCapitulo4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCapitulo4ActionPerformed
+
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
+System.exit(0);
+    }//GEN-LAST:event_btnSalirActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -261,6 +289,7 @@ capitulo1();
     private javax.swing.JButton btnCapitulo3;
     private javax.swing.JButton btnCapitulo4;
     private javax.swing.JButton btnGaleria;
+    private javax.swing.JButton btnSalir;
     private javax.swing.JButton btnTest;
     private javax.swing.JDesktopPane escritorio;
     private javax.swing.JButton jButton1;
