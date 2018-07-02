@@ -18,9 +18,11 @@ public class capitulo1 extends javax.swing.JInternalFrame {
      */
     public capitulo1() {
         initComponents();
+          
     }
- AudioClip sonido;
- 
+    AudioClip sonido;
+  boolean s = false;
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -40,7 +42,6 @@ public class capitulo1 extends javax.swing.JInternalFrame {
         jButton5 = new javax.swing.JButton();
         btnStop = new javax.swing.JButton();
 
-        setClosable(true);
         setTitle("Capitulo 1");
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -81,6 +82,11 @@ public class capitulo1 extends javax.swing.JInternalFrame {
         jPanel1.add(btnplay, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 40, -1, -1));
 
         jButton5.setText("Salir");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 390, -1, -1));
 
         btnStop.setText("Stop");
@@ -110,13 +116,25 @@ public class capitulo1 extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void btnStopActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStopActionPerformed
- sonido.stop();
+        if (s == true) {
+            sonido.stop();
+        }
     }//GEN-LAST:event_btnStopActionPerformed
 
     private void btnplayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnplayActionPerformed
-sonido = java.applet.Applet.newAudioClip(getClass().getResource("../audios/Ecuaciones lineales.wav"));
- sonido.play();
+        if (s == false) {
+            sonido = java.applet.Applet.newAudioClip(getClass().getResource("../audios/Ecuaciones lineales.wav"));
+            sonido.play();
+            s = true;
+        }
     }//GEN-LAST:event_btnplayActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        if (s == true) {
+            sonido.stop();
+        }
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton5ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -4,8 +4,11 @@
  * and open the template in the editor.
  */
 package ventanas;
-
+//impotaciones para la imagend e fondo
 import java.awt.Image;
+import java.awt.Graphics;
+import javax.swing.ImageIcon;
+//importacion propiedades del formulario
 import java.awt.Toolkit;
 import javax.swing.JFrame;
 
@@ -37,19 +40,21 @@ public class principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        escritorio = new javax.swing.JDesktopPane();
+        ImageIcon icon = new ImageIcon(getClass().getResource("/imagenes/fondo.jpg"));
+        Image image = icon.getImage();
+        escritorio = new javax.swing.JDesktopPane(){
+            public void paintComponent(Graphics g){
+                g.drawImage(image,0,0,getWidth(),getHeight(),this);
+            }
+        };
+        btnCapitulo3 = new javax.swing.JButton();
+        btnCapitulo2 = new javax.swing.JButton();
+        btnGaleria = new javax.swing.JButton();
+        btnCapitulo4 = new javax.swing.JButton();
+        btnTest = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem7 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
@@ -57,99 +62,86 @@ public class principal extends javax.swing.JFrame {
         jMenuItem5 = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
+        jMenu3 = new javax.swing.JMenu();
+        jMenuItem8 = new javax.swing.JMenuItem();
+        jMenuItem9 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("SISTEMA DE ALGEBRA");
         setIconImage(getIconImage());
         setResizable(false);
 
-        jButton1.setText("Capitulo I");
+        btnCapitulo3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cap3.png"))); // NOI18N
+
+        btnCapitulo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cap2.png"))); // NOI18N
+
+        btnGaleria.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/GALERIA.png"))); // NOI18N
+
+        btnCapitulo4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cap4.png"))); // NOI18N
+
+        btnTest.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/test.png"))); // NOI18N
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cap1.png"))); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
 
-        jButton2.setText("jButton1");
-
-        jButton3.setText("Capitulo IV");
-
-        jButton4.setText("jButton1");
-
-        jButton5.setText("Capitulo II");
-
-        jButton6.setText("jButton1");
-
-        jButton7.setText("jButton1");
-
-        jButton8.setText("Capitulo III");
-
-        jButton9.setText("jButton1");
-
+        escritorio.setLayer(btnCapitulo3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(btnCapitulo2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(btnGaleria, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(btnCapitulo4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(btnTest, javax.swing.JLayeredPane.DEFAULT_LAYER);
         escritorio.setLayer(jButton1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        escritorio.setLayer(jButton2, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        escritorio.setLayer(jButton3, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        escritorio.setLayer(jButton4, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        escritorio.setLayer(jButton5, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        escritorio.setLayer(jButton6, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        escritorio.setLayer(jButton7, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        escritorio.setLayer(jButton8, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        escritorio.setLayer(jButton9, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout escritorioLayout = new javax.swing.GroupLayout(escritorio);
         escritorio.setLayout(escritorioLayout);
         escritorioLayout.setHorizontalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(escritorioLayout.createSequentialGroup()
-                .addGap(203, 203, 203)
-                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton3)
-                    .addComponent(jButton2)
-                    .addComponent(jButton1))
-                .addGap(72, 72, 72)
-                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton4)
-                    .addComponent(jButton6)
-                    .addComponent(jButton5))
-                .addGap(59, 59, 59)
-                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton7)
-                    .addComponent(jButton9)
-                    .addComponent(jButton8))
-                .addContainerGap(469, Short.MAX_VALUE))
+                .addGap(250, 250, 250)
+                .addComponent(jButton1)
+                .addGap(107, 107, 107)
+                .addComponent(btnCapitulo4))
+            .addGroup(escritorioLayout.createSequentialGroup()
+                .addGap(250, 250, 250)
+                .addComponent(btnCapitulo2)
+                .addGap(107, 107, 107)
+                .addComponent(btnGaleria))
+            .addGroup(escritorioLayout.createSequentialGroup()
+                .addGap(260, 260, 260)
+                .addComponent(btnCapitulo3)
+                .addGap(97, 97, 97)
+                .addComponent(btnTest))
         );
         escritorioLayout.setVerticalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(escritorioLayout.createSequentialGroup()
-                .addGap(147, 147, 147)
-                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGap(100, 100, 100)
+                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton1)
                     .addGroup(escritorioLayout.createSequentialGroup()
-                        .addComponent(jButton8)
-                        .addGap(34, 34, 34)
-                        .addComponent(jButton7)
-                        .addGap(40, 40, 40)
-                        .addComponent(jButton9))
-                    .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(escritorioLayout.createSequentialGroup()
-                            .addComponent(jButton5)
-                            .addGap(34, 34, 34)
-                            .addComponent(jButton4)
-                            .addGap(40, 40, 40)
-                            .addComponent(jButton6))
-                        .addGroup(escritorioLayout.createSequentialGroup()
-                            .addComponent(jButton1)
-                            .addGap(34, 34, 34)
-                            .addComponent(jButton3)
-                            .addGap(40, 40, 40)
-                            .addComponent(jButton2))))
-                .addContainerGap(234, Short.MAX_VALUE))
+                        .addGap(5, 5, 5)
+                        .addComponent(btnCapitulo4)))
+                .addGap(34, 34, 34)
+                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(escritorioLayout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addComponent(btnCapitulo2))
+                    .addComponent(btnGaleria))
+                .addGap(26, 26, 26)
+                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(escritorioLayout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addComponent(btnCapitulo3))
+                    .addComponent(btnTest)))
         );
 
-        jMenu1.setText("Archivo");
+        jMenu1.setText("Archivo             ");
+        jMenu1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
-        jMenuItem1.setText("Contactos");
-        jMenu1.add(jMenuItem1);
-
-        jMenuItem7.setText("Login");
+        jMenuItem7.setText("Login                ");
         jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem7ActionPerformed(evt);
@@ -157,14 +149,15 @@ public class principal extends javax.swing.JFrame {
         });
         jMenu1.add(jMenuItem7);
 
-        jMenuItem2.setText("Salir");
+        jMenuItem2.setText("Salir                ");
         jMenu1.add(jMenuItem2);
 
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("Capitulos");
+        jMenu2.setText("Capitulos           ");
+        jMenu2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
-        jMenuItem6.setText("Capitulo 1");
+        jMenuItem6.setText("Capitulo I          ");
         jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem6ActionPerformed(evt);
@@ -172,16 +165,27 @@ public class principal extends javax.swing.JFrame {
         });
         jMenu2.add(jMenuItem6);
 
-        jMenuItem5.setText("jMenuItem5");
+        jMenuItem5.setText("Capitulo II");
         jMenu2.add(jMenuItem5);
 
-        jMenuItem4.setText("jMenuItem4");
+        jMenuItem4.setText("Capitulo III");
         jMenu2.add(jMenuItem4);
 
-        jMenuItem3.setText("jMenuItem3");
+        jMenuItem3.setText("Capitulo IV");
         jMenu2.add(jMenuItem3);
 
         jMenuBar1.add(jMenu2);
+
+        jMenu3.setText("Ver");
+        jMenu3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+
+        jMenuItem8.setText("Galeria             ");
+        jMenu3.add(jMenuItem8);
+
+        jMenuItem9.setText("Test");
+        jMenu3.add(jMenuItem9);
+
+        jMenuBar1.add(jMenu3);
 
         setJMenuBar(jMenuBar1);
 
@@ -208,14 +212,14 @@ c1.show();
 capitulo1();
     }//GEN-LAST:event_jMenuItem6ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-capitulo1();
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
 this.setVisible(false);
  new login().setVisible(true);
     }//GEN-LAST:event_jMenuItem7ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+capitulo1();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -253,25 +257,24 @@ this.setVisible(false);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCapitulo2;
+    private javax.swing.JButton btnCapitulo3;
+    private javax.swing.JButton btnCapitulo4;
+    private javax.swing.JButton btnGaleria;
+    private javax.swing.JButton btnTest;
     private javax.swing.JDesktopPane escritorio;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;
+    private javax.swing.JMenuItem jMenuItem8;
+    private javax.swing.JMenuItem jMenuItem9;
     // End of variables declaration//GEN-END:variables
 }
