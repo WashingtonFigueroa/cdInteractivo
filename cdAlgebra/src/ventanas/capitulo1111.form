@@ -46,16 +46,16 @@
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Georgia" size="18" style="3"/>
+              <Font name="Georgia" size="18" style="1"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="______________________"/>
+            <Property name="text" type="java.lang.String" value="____________________________"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="20" y="50" width="-1" height="-1"/>
+              <AbsoluteConstraints x="30" y="50" width="-1" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -80,14 +80,14 @@
               <Properties>
                 <Property name="columns" type="int" value="20"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Georgia" size="18" style="3"/>
+                  <Font name="Georgia" size="18" style="1"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="33" green="33" red="0" type="rgb"/>
                 </Property>
                 <Property name="lineWrap" type="boolean" value="true"/>
                 <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="&#x9;INTRODUCCI&#xd3;N&#xa;Los sistemas de ecuaciones lineales son: &#x201c;el problema central del &#xe1;lgebra lineal&#x201d;. En efecto, los conceptos formales del &#xe1;lgebra lineal, como independencia y dependencia lineal, requieren de laformulaci&#xf3;n y resoluci&#xf3;n de sistemas de ecuaciones lineales.&#xa;Estos &#xfa;ltimos, adem&#xe1;s, tienen aplicaci&#xf3;n en distintas &#xe1;reas de conocimiento, como la ingenier&#xed;a o la computaci&#xf3;n. (Gonzalez, 2009).&#xa;&#xa;&#x9;CONCEPTO&#xa;Un sistema de ecuaciones lineales, tambi&#xe9;n conocido como sistema lineal de ecuaciones o simplemente sistema lineal, es un conjunto de ecuaciones lineales (es decir, un sistema de ecuaciones en donde cada ecuaci&#xf3;n es de primer grado), definidas sobre un cuerpo o un anillo &#xa;conmutativo. &#xa;&#xa;El problema consiste en encontrar los valores desconocidos de las variables x1, x2 y x3 que &#xa;satisfacen las tres ecuaciones.&#xa;"/>
+                <Property name="text" type="java.lang.String" value="Es un algoritmo del &#xe1;lgebra lineal para determinar las soluciones de un sistema de ecuaciones lineales, encontrar matrices e inversas. &#xa;&#xa;Un sistema de &#x9;ecuaciones se resuelve por el m&#xe9;todo de Gauss cuando se obtienen sus soluciones mediante la reducci&#xf3;n del sistema dado a otro equivalente en el que cada ecuaci&#xf3;n tiene una inc&#xf3;gnita menos que la anterior. &#xa;&#xa;El m&#xe9;todo de Gauss transforma la matriz de coeficientes en una matriz triangular superior. El m&#xe9;todo de Gauss-Jordan contin&#xfa;a el proceso de transformaci&#xf3;n hasta obtener una matriz diagonal. &#xa;&#xa;(Gowers, 2008)"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -169,10 +169,10 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JButton" name="btnSiguiente">
+        <Component class="javax.swing.JButton" name="btnPrimero">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagenes/dere.png"/>
+              <Image iconType="3" name="/imagenes/izquierda.png"/>
             </Property>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -181,7 +181,7 @@
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSiguienteActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPrimeroActionPerformed"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -189,10 +189,26 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JButton" name="btnUltimo">
+        <Component class="javax.swing.JLabel" name="jLabel2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Georgia" size="18" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="ELIMINACI&#xd3;N DE GAUSS-JORDAN"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="40" y="40" width="-1" height="-1"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnAnterior">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagenes/derecha.png"/>
+              <Image iconType="3" name="/imagenes/izquier.png"/>
             </Property>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -201,27 +217,11 @@
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnUltimoActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAnteriorActionPerformed"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="810" y="550" width="60" height="60"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel2">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Georgia" size="18" style="3"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="ECUACIONES LINEALES"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="40" y="40" width="-1" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>

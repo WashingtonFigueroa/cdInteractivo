@@ -11,12 +11,12 @@ import java.applet.AudioClip;
  *
  * @author pc
  */
-public class capitulo1 extends javax.swing.JInternalFrame {
+public class capitulo11 extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form capitulo1
      */
-    public capitulo1() {
+    public capitulo11() {
         initComponents();
 
     }
@@ -40,28 +40,30 @@ public class capitulo1 extends javax.swing.JInternalFrame {
         btnplay = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         btnStop = new javax.swing.JButton();
-        btnSiguiente = new javax.swing.JButton();
+        btnPrimero = new javax.swing.JButton();
         btnUltimo = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        btnSiguiente = new javax.swing.JButton();
+        btnAnterior = new javax.swing.JButton();
 
         setTitle("CAPITULO I");
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Georgia", 3, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("______________________");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, -1, -1));
+        jLabel1.setText("______________________________________");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, -1, -1));
 
         jScrollPane1.setBorder(null);
 
         jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Georgia", 3, 18)); // NOI18N
+        jTextArea1.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         jTextArea1.setForeground(new java.awt.Color(0, 51, 51));
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
-        jTextArea1.setText("\tINTRODUCCIÓN\nLos sistemas de ecuaciones lineales son: “el problema central del álgebra lineal”. En efecto, los conceptos formales del álgebra lineal, como independencia y dependencia lineal, requieren de laformulación y resolución de sistemas de ecuaciones lineales.\nEstos últimos, además, tienen aplicación en distintas áreas de conocimiento, como la ingeniería o la computación. (Gonzalez, 2009).\n\n\tCONCEPTO\nUn sistema de ecuaciones lineales, también conocido como sistema lineal de ecuaciones o simplemente sistema lineal, es un conjunto de ecuaciones lineales (es decir, un sistema de ecuaciones en donde cada ecuación es de primer grado), definidas sobre un cuerpo o un anillo \nconmutativo. \n\nEl problema consiste en encontrar los valores desconocidos de las variables x1, x2 y x3 que \nsatisfacen las tres ecuaciones.\n");
+        jTextArea1.setText("Existen métodos sencillos para resolver un sistema de dos ecuaciones con dos incógnitas, y son:\n\n    1. Método de sustitución, que consiste en aislar una de las incógnitas de una de las dos ecuaciones y sustituir su valor en la otra ecuación. Una vez resuelta esta última, se resuelve la otra ecuación sustituyendo la incógnita por este valor.\n\n    2. Método de igualación, que consiste en aislar la misma incógnita de ambas ecuaciones e igualar los resultados obtenidos. Una vez resuelta esta última ecuación, puede sustituirse el valor de la incógnita en una de las ecuaciones iniciales y resolver la ecuación resultante para hallar el otro valor.\n\n    3. Método de reducción, que consiste en multiplicar convenientemente ambas ecuaciones de manera que una vez restadas, desaparezca una de las incógnitas.\n");
         jScrollPane1.setViewportView(jTextArea1);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 830, 430));
@@ -105,16 +107,16 @@ public class capitulo1 extends javax.swing.JInternalFrame {
         });
         jPanel1.add(btnStop, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 120, -1, -1));
 
-        btnSiguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/dere.png"))); // NOI18N
-        btnSiguiente.setBorderPainted(false);
-        btnSiguiente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnSiguiente.setOpaque(false);
-        btnSiguiente.addActionListener(new java.awt.event.ActionListener() {
+        btnPrimero.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/izquierda.png"))); // NOI18N
+        btnPrimero.setBorderPainted(false);
+        btnPrimero.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnPrimero.setOpaque(false);
+        btnPrimero.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSiguienteActionPerformed(evt);
+                btnPrimeroActionPerformed(evt);
             }
         });
-        jPanel1.add(btnSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 550, 60, 60));
+        jPanel1.add(btnPrimero, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 550, 60, 60));
 
         btnUltimo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/derecha.png"))); // NOI18N
         btnUltimo.setBorderPainted(false);
@@ -127,10 +129,32 @@ public class capitulo1 extends javax.swing.JInternalFrame {
         });
         jPanel1.add(btnUltimo, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 550, 60, 60));
 
-        jLabel2.setFont(new java.awt.Font("Georgia", 3, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("ECUACIONES LINEALES");
+        jLabel2.setText("ECUACIONES LINEALES CON DOS INCOGNITAS");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, -1, -1));
+
+        btnSiguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/dere.png"))); // NOI18N
+        btnSiguiente.setBorderPainted(false);
+        btnSiguiente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSiguiente.setOpaque(false);
+        btnSiguiente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSiguienteActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 550, 60, 60));
+
+        btnAnterior.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/izquier.png"))); // NOI18N
+        btnAnterior.setBorderPainted(false);
+        btnAnterior.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnAnterior.setOpaque(false);
+        btnAnterior.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAnteriorActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnAnterior, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 550, 60, 60));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -162,21 +186,21 @@ public class capitulo1 extends javax.swing.JInternalFrame {
 
     private void btnplayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnplayActionPerformed
         if (s == false) {
-            sonido = java.applet.Applet.newAudioClip(getClass().getResource("../audios/Ecuaciones lineales.wav"));
+            sonido = java.applet.Applet.newAudioClip(getClass().getResource("../audios/ECUACIONES LINEALES CON DOS INCOGNITAS.wav"));
             sonido.play();
             s = true;
         }
     }//GEN-LAST:event_btnplayActionPerformed
 
-    private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
+    private void btnPrimeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrimeroActionPerformed
         if (s == true) {
             sonido.stop();
         }
         this.setVisible(false);
-        capitulo11 c11 = new capitulo11();
-        principal.escritorio.add(c11);
-        c11.show();
-    }//GEN-LAST:event_btnSiguienteActionPerformed
+        capitulo1 c1 = new capitulo1();
+        principal.escritorio.add(c1);
+        c1.show();
+    }//GEN-LAST:event_btnPrimeroActionPerformed
 
     private void btnUltimoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUltimoActionPerformed
         if (s == true) {
@@ -188,8 +212,30 @@ public class capitulo1 extends javax.swing.JInternalFrame {
         c1111.show();
     }//GEN-LAST:event_btnUltimoActionPerformed
 
+    private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
+        if (s == true) {
+            sonido.stop();
+        }
+        this.setVisible(false);
+        capitulo111 c111 = new capitulo111();
+        principal.escritorio.add(c111);
+        c111.show();
+    }//GEN-LAST:event_btnSiguienteActionPerformed
+
+    private void btnAnteriorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnteriorActionPerformed
+        if (s == true) {
+            sonido.stop();
+        }
+        this.setVisible(false);
+        capitulo1 c1 = new capitulo1();
+        principal.escritorio.add(c1);
+        c1.show();
+    }//GEN-LAST:event_btnAnteriorActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAnterior;
+    private javax.swing.JButton btnPrimero;
     private javax.swing.JButton btnSiguiente;
     private javax.swing.JButton btnStop;
     private javax.swing.JButton btnUltimo;

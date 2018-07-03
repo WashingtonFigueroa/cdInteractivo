@@ -5,6 +5,7 @@
  */
 package ventanas;
 //impotaciones para la imagend e fondo
+
 import java.awt.Image;
 import java.awt.Graphics;
 import javax.swing.ImageIcon;
@@ -27,10 +28,11 @@ public class principal extends javax.swing.JFrame {
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
     }
 
-    public  Image getIconImage(){
-    Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("IMAGENES/IKO.ico"));
-    return retValue;
+    public Image getIconImage() {
+        Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("IMAGENES/IKO.ico"));
+        return retValue;
     }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -68,7 +70,7 @@ public class principal extends javax.swing.JFrame {
         jMenuItem9 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("SISTEMA DE ALGEBRA");
+        setTitle("SISTEMA DE ALGEBRA LINEAL - ALL - LINE");
         setIconImage(getIconImage());
         setResizable(false);
 
@@ -223,22 +225,22 @@ public class principal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-   public void capitulo1 (){
-   capitulo1 c1 = new capitulo1();
-escritorio.add(c1);
-c1.show();
-   }
+    public void capitulo1() {
+        capitulo1 c1 = new capitulo1();
+        escritorio.add(c1);
+        c1.show();
+    }
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
-capitulo1();
+        capitulo1();
     }//GEN-LAST:event_jMenuItem6ActionPerformed
 
     private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
-this.setVisible(false);
- new login().setVisible(true);
+        this.setVisible(false);
+        new login().setVisible(true);
     }//GEN-LAST:event_jMenuItem7ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-capitulo1();
+        capitulo1();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btnCapitulo4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCapitulo4ActionPerformed
@@ -246,7 +248,7 @@ capitulo1();
     }//GEN-LAST:event_btnCapitulo4ActionPerformed
 
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
-System.exit(0);
+        System.exit(0);
     }//GEN-LAST:event_btnSalirActionPerformed
 
     /**
@@ -291,7 +293,7 @@ System.exit(0);
     private javax.swing.JButton btnGaleria;
     private javax.swing.JButton btnSalir;
     private javax.swing.JButton btnTest;
-    private javax.swing.JDesktopPane escritorio;
+    public static javax.swing.JDesktopPane escritorio;
     private javax.swing.JButton jButton1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;

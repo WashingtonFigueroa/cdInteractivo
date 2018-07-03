@@ -11,12 +11,12 @@ import java.applet.AudioClip;
  *
  * @author pc
  */
-public class capitulo1 extends javax.swing.JInternalFrame {
+public class capitulo3 extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form capitulo1
      */
-    public capitulo1() {
+    public capitulo3() {
         initComponents();
 
     }
