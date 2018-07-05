@@ -11,12 +11,12 @@ import java.applet.AudioClip;
  *
  * @author pc
  */
-public class capitulo2 extends javax.swing.JInternalFrame {
+public class capitulo33 extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form capitulo1
      */
-    public capitulo2() {
+    public capitulo33() {
         initComponents();
 
     }
@@ -33,31 +33,48 @@ public class capitulo2 extends javax.swing.JInternalFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
         jButton3 = new javax.swing.JButton();
         btnplay = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
         btnStop = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
         btnSiguiente = new javax.swing.JButton();
         btnUltimo = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        jButton5 = new javax.swing.JButton();
+        btnAnterior = new javax.swing.JButton();
+        btnPrimero = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
 
-        setTitle("CAPITULO II");
+        setTitle("CAPITULO III");
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel4.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel4.setText("http://personales.unican.es/camposn/espacios_vectoriales2.pdf");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 510, -1, -1));
+
         jLabel1.setFont(new java.awt.Font("Georgia", 3, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel1.setText("__________________________");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
+        jLabel1.setText("______________________");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, -1, -1));
+
+        jScrollPane1.setBorder(null);
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Georgia", 3, 18)); // NOI18N
+        jTextArea1.setForeground(new java.awt.Color(0, 51, 51));
+        jTextArea1.setLineWrap(true);
+        jTextArea1.setRows(5);
+        jTextArea1.setText("En matemática, particularmente en álgebra lineal, una combinación lineal es una expresión matemática que consiste en la suma entre pares de elementos, de determinados conjuntos, multiplicados entre sí.\n\nhttps://aga.frba.utn.edu.ar/espacios-y-subespacios-vectoriales/\n\nBASE. Se llama base de un espacio (o subespacio) vectorial a un sistema generador de dicho espacio o subespacio, que sea a la vez linealmente independiente. Propiedades de las bases. 1. Una base de S es un sistema generador minimal de S (lo más pequeño posible). 2. Además es un conjunto independiente maximal dentro de S (lo más grande posible). 3. Una base de S permite expresar todos los vectores de S como combinación lineal de ella, de manera única para cada vector.\n\nDEFINICION DE DIMENSION  Todas las bases de un mismo espacio o subespacio tienen el mismo número de vectores. Se llama dimensión de dicho espacio o subespacio.  Por tanto, la dimensión es el máximo número de vectores independientes que podemos tener en el espacio o subespacio. En otras palabras, es el máximo rango que puede tener un conjunto de vectores dicho espacio.  Es también el rango de cualquier sistema generador de dicho espacio.\n");
+        jScrollPane1.setViewportView(jTextArea1);
+
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 750, 340));
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/video.png"))); // NOI18N
         jButton3.setBorderPainted(false);
@@ -76,17 +93,6 @@ public class capitulo2 extends javax.swing.JInternalFrame {
         });
         jPanel1.add(btnplay, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 60, -1, -1));
 
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/home_facebook.png"))); // NOI18N
-        jButton5.setBorderPainted(false);
-        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton5.setOpaque(false);
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 510, -1, 100));
-
         btnStop.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/voicenow.png"))); // NOI18N
         btnStop.setBorderPainted(false);
         btnStop.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -97,6 +103,11 @@ public class capitulo2 extends javax.swing.JInternalFrame {
             }
         });
         jPanel1.add(btnStop, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 160, -1, -1));
+
+        jLabel2.setFont(new java.awt.Font("Georgia", 3, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel2.setText("COMBINACIÓN LINEA");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, -1, -1));
 
         btnSiguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/dere.png"))); // NOI18N
         btnSiguiente.setBorderPainted(false);
@@ -120,37 +131,38 @@ public class capitulo2 extends javax.swing.JInternalFrame {
         });
         jPanel1.add(btnUltimo, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 550, 60, 60));
 
-        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel2.setFont(new java.awt.Font("Georgia", 3, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel2.setText("MATRICES Y DETERMINANTES");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, -1, -1));
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/home_facebook.png"))); // NOI18N
+        jButton5.setBorderPainted(false);
+        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton5.setOpaque(false);
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 510, -1, 100));
 
-        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel3.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel3.setText("VECTOR:");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, -1, -1));
+        btnAnterior.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/izquier.png"))); // NOI18N
+        btnAnterior.setBorderPainted(false);
+        btnAnterior.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnAnterior.setOpaque(false);
+        btnAnterior.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAnteriorActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnAnterior, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 550, 60, 60));
 
-        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel4.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel4.setText("El producto vectorial en A y B da en resultado el nuevo vector C, con frecuencia se resuelve en cruz o con la función Seno.");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, -1, -1));
-
-        jLabel7.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel7.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel7.setText("• PRODUCTO VECTORIAL Y MATRICIAL  ");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, -1, -1));
-
-        jLabel8.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("• PRODUCTO VECTORIAL Y MATRICIAL  ");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, -1, -1));
-
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/c2/vectro.PNG"))); // NOI18N
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, -1, -1));
+        btnPrimero.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/izquierda.png"))); // NOI18N
+        btnPrimero.setBorderPainted(false);
+        btnPrimero.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnPrimero.setOpaque(false);
+        btnPrimero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPrimeroActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnPrimero, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 550, 60, 60));
 
         jLabel5.setBackground(new java.awt.Color(51, 51, 51));
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondo2.jpg"))); // NOI18N
@@ -160,11 +172,11 @@ public class capitulo2 extends javax.swing.JInternalFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 988, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 625, Short.MAX_VALUE)
         );
 
         pack();
@@ -176,13 +188,6 @@ public class capitulo2 extends javax.swing.JInternalFrame {
             s = false;
         }
     }//GEN-LAST:event_btnStopActionPerformed
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        if (s == true) {
-            sonido.stop();
-        }
-        this.setVisible(false);
-    }//GEN-LAST:event_jButton5ActionPerformed
 
     private void btnplayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnplayActionPerformed
         if (s == false) {
@@ -197,9 +202,9 @@ public class capitulo2 extends javax.swing.JInternalFrame {
             sonido.stop();
         }
         this.setVisible(false);
-        capitulo22 c22 = new capitulo22();
-        principal.escritorio.add(c22);
-        c22.show();
+        capitulo333 c333 = new capitulo333();
+        principal.escritorio.add(c333);
+        c333.show();
     }//GEN-LAST:event_btnSiguienteActionPerformed
 
     private void btnUltimoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUltimoActionPerformed
@@ -207,13 +212,42 @@ public class capitulo2 extends javax.swing.JInternalFrame {
             sonido.stop();
         }
         this.setVisible(false);
-        capitulo22222 c22222 = new capitulo22222();
-        principal.escritorio.add(c22222);
-        c22222.show();
+        capitulo3333 c3333 = new capitulo3333();
+        principal.escritorio.add(c3333);
+        c3333.show();
     }//GEN-LAST:event_btnUltimoActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        if (s == true) {
+            sonido.stop();
+        }
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void btnAnteriorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnteriorActionPerformed
+        if (s == true) {
+            sonido.stop();
+        }
+        this.setVisible(false);
+        capitulo3 c3 = new capitulo3();
+        principal.escritorio.add(c3);
+        c3.show();
+    }//GEN-LAST:event_btnAnteriorActionPerformed
+
+    private void btnPrimeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrimeroActionPerformed
+        if (s == true) {
+            sonido.stop();
+        }
+        this.setVisible(false);
+        capitulo3 c3 = new capitulo3();
+        principal.escritorio.add(c3);
+        c3.show();
+    }//GEN-LAST:event_btnPrimeroActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAnterior;
+    private javax.swing.JButton btnPrimero;
     private javax.swing.JButton btnSiguiente;
     private javax.swing.JButton btnStop;
     private javax.swing.JButton btnUltimo;
@@ -222,12 +256,10 @@ public class capitulo2 extends javax.swing.JInternalFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
 }

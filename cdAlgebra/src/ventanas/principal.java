@@ -68,6 +68,7 @@ public class principal extends javax.swing.JFrame {
         jMenu3 = new javax.swing.JMenu();
         jMenuItem8 = new javax.swing.JMenuItem();
         jMenuItem9 = new javax.swing.JMenuItem();
+        jMenuItem1 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("SISTEMA DE ALGEBRA LINEAL - ALL - LINE");
@@ -76,9 +77,19 @@ public class principal extends javax.swing.JFrame {
 
         btnCapitulo3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cap3.png"))); // NOI18N
         btnCapitulo3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnCapitulo3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCapitulo3ActionPerformed(evt);
+            }
+        });
 
         btnCapitulo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cap2.png"))); // NOI18N
         btnCapitulo2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnCapitulo2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCapitulo2ActionPerformed(evt);
+            }
+        });
 
         btnGaleria.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/GALERIA.png"))); // NOI18N
         btnGaleria.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -172,6 +183,11 @@ public class principal extends javax.swing.JFrame {
         jMenu1.add(jMenuItem7);
 
         jMenuItem2.setText("Salir                ");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem2);
 
         jMenuBar1.add(jMenu1);
@@ -188,12 +204,27 @@ public class principal extends javax.swing.JFrame {
         jMenu2.add(jMenuItem6);
 
         jMenuItem5.setText("Capitulo II");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
         jMenu2.add(jMenuItem5);
 
         jMenuItem4.setText("Capitulo III");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
         jMenu2.add(jMenuItem4);
 
         jMenuItem3.setText("Capitulo IV");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
         jMenu2.add(jMenuItem3);
 
         jMenuBar1.add(jMenu2);
@@ -206,6 +237,9 @@ public class principal extends javax.swing.JFrame {
 
         jMenuItem9.setText("Test");
         jMenu3.add(jMenuItem9);
+
+        jMenuItem1.setText("Nosotros");
+        jMenu3.add(jMenuItem1);
 
         jMenuBar1.add(jMenu3);
 
@@ -230,6 +264,36 @@ public class principal extends javax.swing.JFrame {
         escritorio.add(c1);
         c1.show();
     }
+
+    public void capitulo2() {
+        capitulo2 c2 = new capitulo2();
+        escritorio.add(c2);
+        c2.show();
+    }
+
+    public void capitulo3() {
+        capitulo3 c3 = new capitulo3();
+        escritorio.add(c3);
+        c3.show();
+    }
+
+    public void capitulo4() {
+        capitulo4 c4 = new capitulo4();
+        escritorio.add(c4);
+        c4.show();
+    }
+
+    public void galeria() {
+        capitulo4 c4 = new capitulo4();
+        escritorio.add(c4);
+        c4.show();
+    }
+
+    public void test() {
+        capitulo4 c4 = new capitulo4();
+        escritorio.add(c4);
+        c4.show();
+    }
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
         capitulo1();
     }//GEN-LAST:event_jMenuItem6ActionPerformed
@@ -244,12 +308,36 @@ public class principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btnCapitulo4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCapitulo4ActionPerformed
-        // TODO add your handling code here:
+  capitulo4();
     }//GEN-LAST:event_btnCapitulo4ActionPerformed
 
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
         System.exit(0);
     }//GEN-LAST:event_btnSalirActionPerformed
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        capitulo2();
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
+
+    private void btnCapitulo2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCapitulo2ActionPerformed
+        capitulo2();
+    }//GEN-LAST:event_btnCapitulo2ActionPerformed
+
+    private void btnCapitulo3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCapitulo3ActionPerformed
+  capitulo3();
+    }//GEN-LAST:event_btnCapitulo3ActionPerformed
+
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+  capitulo3();      
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+  capitulo4();      
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+System.exit(0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -299,6 +387,7 @@ public class principal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;

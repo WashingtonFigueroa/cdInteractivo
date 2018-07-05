@@ -33,26 +33,34 @@ public class capitulo3 extends javax.swing.JInternalFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jButton3 = new javax.swing.JButton();
         btnplay = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
         btnStop = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
         btnSiguiente = new javax.swing.JButton();
         btnUltimo = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        jButton5 = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
 
-        setTitle("CAPITULO I");
+        setTitle("CAPITULO III");
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel4.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel4.setText("https://aga.frba.utn.edu.ar/espacios-y-subespacios-vectoriales/");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 380, -1, -1));
+
         jLabel1.setFont(new java.awt.Font("Georgia", 3, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(51, 51, 51));
         jLabel1.setText("______________________");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, -1, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, -1, -1));
 
         jScrollPane1.setBorder(null);
 
@@ -61,16 +69,16 @@ public class capitulo3 extends javax.swing.JInternalFrame {
         jTextArea1.setForeground(new java.awt.Color(0, 51, 51));
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
-        jTextArea1.setText("\tINTRODUCCIÓN\nLos sistemas de ecuaciones lineales son: “el problema central del álgebra lineal”. En efecto, los conceptos formales del álgebra lineal, como independencia y dependencia lineal, requieren de laformulación y resolución de sistemas de ecuaciones lineales.\nEstos últimos, además, tienen aplicación en distintas áreas de conocimiento, como la ingeniería o la computación. (Gonzalez, 2009).\n\n\tCONCEPTO\nUn sistema de ecuaciones lineales, también conocido como sistema lineal de ecuaciones o simplemente sistema lineal, es un conjunto de ecuaciones lineales (es decir, un sistema de ecuaciones en donde cada ecuación es de primer grado), definidas sobre un cuerpo o un anillo \nconmutativo. \n\nEl problema consiste en encontrar los valores desconocidos de las variables x1, x2 y x3 que \nsatisfacen las tres ecuaciones.\n");
+        jTextArea1.setText("Definición:\n\nUn espacio vectorial es un conjunto no vacío VV de objetos, llamados vectores, en el que se han definido dos operaciones: la suma y el producto por un escalar (número real) sujetas a los diez axiomas que se dan a continuación. Los axiomas deben ser válidos para todos los vectores uu, vv y ww en VV y todos los escalares αα y ββreales.\n\n");
         jScrollPane1.setViewportView(jTextArea1);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 830, 430));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 750, 190));
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/video.png"))); // NOI18N
         jButton3.setBorderPainted(false);
         jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton3.setOpaque(false);
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 220, -1, 90));
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 260, -1, 90));
 
         btnplay.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/voicerecorder.png"))); // NOI18N
         btnplay.setBorderPainted(false);
@@ -81,18 +89,7 @@ public class capitulo3 extends javax.swing.JInternalFrame {
                 btnplayActionPerformed(evt);
             }
         });
-        jPanel1.add(btnplay, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 20, -1, -1));
-
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/home_facebook.png"))); // NOI18N
-        jButton5.setBorderPainted(false);
-        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton5.setOpaque(false);
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 510, -1, 100));
+        jPanel1.add(btnplay, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 60, -1, -1));
 
         btnStop.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/voicenow.png"))); // NOI18N
         btnStop.setBorderPainted(false);
@@ -103,7 +100,12 @@ public class capitulo3 extends javax.swing.JInternalFrame {
                 btnStopActionPerformed(evt);
             }
         });
-        jPanel1.add(btnStop, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 120, -1, -1));
+        jPanel1.add(btnStop, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 160, -1, -1));
+
+        jLabel2.setFont(new java.awt.Font("Georgia", 3, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel2.setText("ESPACIOS VECTORIALES");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, -1, -1));
 
         btnSiguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/dere.png"))); // NOI18N
         btnSiguiente.setBorderPainted(false);
@@ -114,7 +116,7 @@ public class capitulo3 extends javax.swing.JInternalFrame {
                 btnSiguienteActionPerformed(evt);
             }
         });
-        jPanel1.add(btnSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 550, 60, 60));
+        jPanel1.add(btnSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 550, 60, 60));
 
         btnUltimo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/derecha.png"))); // NOI18N
         btnUltimo.setBorderPainted(false);
@@ -125,22 +127,32 @@ public class capitulo3 extends javax.swing.JInternalFrame {
                 btnUltimoActionPerformed(evt);
             }
         });
-        jPanel1.add(btnUltimo, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 550, 60, 60));
+        jPanel1.add(btnUltimo, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 550, 60, 60));
 
-        jLabel2.setFont(new java.awt.Font("Georgia", 3, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("ECUACIONES LINEALES");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, -1, -1));
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/home_facebook.png"))); // NOI18N
+        jButton5.setBorderPainted(false);
+        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton5.setOpaque(false);
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 510, -1, 100));
+
+        jLabel5.setBackground(new java.awt.Color(51, 51, 51));
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondo2.jpg"))); // NOI18N
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 990, 630));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1048, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 988, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 625, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 625, Short.MAX_VALUE)
         );
 
         pack();
@@ -152,13 +164,6 @@ public class capitulo3 extends javax.swing.JInternalFrame {
             s = false;
         }
     }//GEN-LAST:event_btnStopActionPerformed
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        if (s == true) {
-            sonido.stop();
-        }
-        this.setVisible(false);
-    }//GEN-LAST:event_jButton5ActionPerformed
 
     private void btnplayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnplayActionPerformed
         if (s == false) {
@@ -173,9 +178,9 @@ public class capitulo3 extends javax.swing.JInternalFrame {
             sonido.stop();
         }
         this.setVisible(false);
-        capitulo11 c11 = new capitulo11();
-        principal.escritorio.add(c11);
-        c11.show();
+        capitulo33 c33 = new capitulo33();
+        principal.escritorio.add(c33);
+        c33.show();
     }//GEN-LAST:event_btnSiguienteActionPerformed
 
     private void btnUltimoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUltimoActionPerformed
@@ -183,10 +188,17 @@ public class capitulo3 extends javax.swing.JInternalFrame {
             sonido.stop();
         }
         this.setVisible(false);
-        capitulo1111 c1111 = new capitulo1111();
-        principal.escritorio.add(c1111);
-        c1111.show();
+        capitulo3333 c3333 = new capitulo3333();
+        principal.escritorio.add(c3333);
+        c3333.show();
     }//GEN-LAST:event_btnUltimoActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        if (s == true) {
+            sonido.stop();
+        }
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton5ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -198,6 +210,8 @@ public class capitulo3 extends javax.swing.JInternalFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;

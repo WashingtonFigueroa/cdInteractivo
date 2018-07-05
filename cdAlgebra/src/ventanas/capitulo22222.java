@@ -11,12 +11,12 @@ import java.applet.AudioClip;
  *
  * @author pc
  */
-public class capitulo2 extends javax.swing.JInternalFrame {
+public class capitulo22222 extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form capitulo1
      */
-    public capitulo2() {
+    public capitulo22222() {
         initComponents();
 
     }
@@ -33,17 +33,18 @@ public class capitulo2 extends javax.swing.JInternalFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        btnPrimero = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        btnAnterior = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
         btnplay = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         btnStop = new javax.swing.JButton();
-        btnSiguiente = new javax.swing.JButton();
-        btnUltimo = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -53,11 +54,52 @@ public class capitulo2 extends javax.swing.JInternalFrame {
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jTextArea1.setText("Llamamos determinante de A, al número obtenido al sumar todos los diferentes productos de\nn elementos que se pueden formar con los elementos de dicha matriz, de modo que en cada \nproducto figuren un elemento de cada distinta fila y uno de cada distinta columna, a cada\nproducto se le asigna el signo (+) si la permutación de los subíndices de filas es del \nmismo orden que la permutación de los subíndices de columnas, y signo (-) si son de \ndistinto orden. \n\nPropiedades de los determinantes\n\n1. \tPara cualquier A, se verifica:   |A| = |tA|\n2.\tSi una matriz A tiene una fila o columna formada por ceros, entonces |A| = 0 .\n3.\tSi a los elementos de una fila o columna de la matriz A se multiplica (o divide) \n\tpor un número k, entonces su determinante queda multiplicado (o dividido) por k.\n4.\tSi en una matriz cuadrada se intercambian entre sí dos filas (o dos columnas), \n\tsu determinante cambia de signo.\n5.\tSi una matriz cuadrada tiene dos filas (o dos columnas) iguales, su determinante \n\tes nulo.\n6.\tSi una matriz cuadrada tiene dos filas (o dos columnas) proporcionales, su \n\tdeterminante es nulo.\n7.\tSi a los elementos de la fila (o columna) i-ésima de un determinante la \n\tdescomponemos en una suma de h sumandos, el determinante  es igual a la suma de \n\tlos determinantes que se obtienen como se ve en el ejemplo siguiente: (\n\tGorostizaga, 2010.\n");
+        jScrollPane1.setViewportView(jTextArea1);
+
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 750, 160));
+
+        btnPrimero.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/izquierda.png"))); // NOI18N
+        btnPrimero.setBorderPainted(false);
+        btnPrimero.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnPrimero.setOpaque(false);
+        btnPrimero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPrimeroActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnPrimero, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 550, 60, 60));
+
+        jLabel9.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel9.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel9.setText("http://www.ehu.eus/juancarlos.gorostizaga/apoyo/determinantes.htm ");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 510, -1, -1));
+
+        jLabel11.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel11.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel11.setText("Gorostizaga, J. C. (18 de 06 de 2010). Determinantes. Obtenido de");
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 480, -1, -1));
+
+        btnAnterior.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/izquier.png"))); // NOI18N
+        btnAnterior.setBorderPainted(false);
+        btnAnterior.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnAnterior.setOpaque(false);
+        btnAnterior.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAnteriorActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnAnterior, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 550, 60, 60));
+
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setFont(new java.awt.Font("Georgia", 3, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(51, 51, 51));
         jLabel1.setText("__________________________");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 220, -1));
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/video.png"))); // NOI18N
         jButton3.setBorderPainted(false);
@@ -98,59 +140,19 @@ public class capitulo2 extends javax.swing.JInternalFrame {
         });
         jPanel1.add(btnStop, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 160, -1, -1));
 
-        btnSiguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/dere.png"))); // NOI18N
-        btnSiguiente.setBorderPainted(false);
-        btnSiguiente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnSiguiente.setOpaque(false);
-        btnSiguiente.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSiguienteActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btnSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 550, 60, 60));
-
-        btnUltimo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/derecha.png"))); // NOI18N
-        btnUltimo.setBorderPainted(false);
-        btnUltimo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnUltimo.setOpaque(false);
-        btnUltimo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnUltimoActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btnUltimo, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 550, 60, 60));
-
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Georgia", 3, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel2.setText("MATRICES Y DETERMINANTES");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, -1, -1));
-
-        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel3.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel3.setText("VECTOR:");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, -1, -1));
-
-        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel4.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel4.setText("El producto vectorial en A y B da en resultado el nuevo vector C, con frecuencia se resuelve en cruz o con la función Seno.");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, -1, -1));
-
-        jLabel7.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel7.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel7.setText("• PRODUCTO VECTORIAL Y MATRICIAL  ");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, -1, -1));
+        jLabel2.setText("DETERMINANTE");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("• PRODUCTO VECTORIAL Y MATRICIAL  ");
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, -1, -1));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/c2/vectro.PNG"))); // NOI18N
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, -1, -1));
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/c2/propiedades.PNG"))); // NOI18N
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 330, 410, -1));
 
         jLabel5.setBackground(new java.awt.Color(51, 51, 51));
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondo2.jpg"))); // NOI18N
@@ -192,42 +194,43 @@ public class capitulo2 extends javax.swing.JInternalFrame {
         }
     }//GEN-LAST:event_btnplayActionPerformed
 
-    private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
+    private void btnAnteriorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnteriorActionPerformed
         if (s == true) {
             sonido.stop();
         }
         this.setVisible(false);
-        capitulo22 c22 = new capitulo22();
-        principal.escritorio.add(c22);
-        c22.show();
-    }//GEN-LAST:event_btnSiguienteActionPerformed
+        capitulo2222 c2222 = new capitulo2222();
+        principal.escritorio.add(c2222);
+        c2222.show();
+    }//GEN-LAST:event_btnAnteriorActionPerformed
 
-    private void btnUltimoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUltimoActionPerformed
+    private void btnPrimeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrimeroActionPerformed
         if (s == true) {
             sonido.stop();
         }
         this.setVisible(false);
-        capitulo22222 c22222 = new capitulo22222();
-        principal.escritorio.add(c22222);
-        c22222.show();
-    }//GEN-LAST:event_btnUltimoActionPerformed
+        capitulo2 c2 = new capitulo2();
+        principal.escritorio.add(c2);
+        c2.show();
+    }//GEN-LAST:event_btnPrimeroActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnSiguiente;
+    private javax.swing.JButton btnAnterior;
+    private javax.swing.JButton btnPrimero;
     private javax.swing.JButton btnStop;
-    private javax.swing.JButton btnUltimo;
     private javax.swing.JButton btnplay;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
 }
